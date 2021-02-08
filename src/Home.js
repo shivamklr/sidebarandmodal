@@ -1,7 +1,9 @@
 import React, { useContext } from 'react'
 import { FaBars } from 'react-icons/fa'
-
+import {AppContext} from './context'
 const Home = () => {
+  const context = useContext(AppContext);
+  console.log(context);
   return <main>
     <button className="sidebar-toggle">
       <FaBars/>
